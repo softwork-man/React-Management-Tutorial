@@ -1,0 +1,44 @@
+
+<h1>Calculator</h1>
+<h2>Goal:</h2>
+<ul>
+    <li>Not Using <code>eval</code></li>
+    <li>Priority Operating
+        <ul>
+            <li><code>/</code></li>
+            <li><code>*</code></li>
+            <li><code>()</code></li>
+        </ul>
+    </li>
+    <li>Ignore Continuous Operator like <samp>++<samp>, <samp>--</samp></li>
+    <li>Ignore Point after First point like <samp>1.1.1</samp></li>
+    <li>Ignore Open Parenthesis after Number like <samp>1(</samp></li>
+    <li>Formula Can Starts with <code>+</code>, <code>-</code></li>
+    <li>Formula Can't Stars with <code>*</code>, <code>/</code></li>
+</ul>
+<form name="calc" class="calc">
+    <label>
+        <span>Formula:</span>
+        <input type="text" name="formula" value="0" autofocus>
+    </label>
+
+    <button type="button">0</button>
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">4</button>
+    <button type="button">5</button>
+    <button type="button">6</button>
+    <button type="button">7</button>
+    <button type="button">8</button>
+    <button type="button">9</button>
+    <button type="button" data-role="point">.</button>
+    <button type="button" data-role="plus">+</button>
+    <button type="button" data-role="minus">-</button>
+    <button type="button" data-role="multi">×</button>
+    <button type="button" data-role="div">÷</button>
+    <button type="button" data-role="open">(</button>
+    <button type="button" data-role="close">)</button>
+    <input type="submit" value="=">
+    <input type="reset" value="C">
+</form>
